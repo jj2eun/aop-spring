@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-4.3.xsd">
+<!-- 공통 클래스 -->
+<bean class="com.java.aop06.AopAspect"></bean>
+<!-- 핵심 클래스 -->
+<bean class="com.java.aop06.AopTest"></bean>
+
+<!-- aop annotation 읽어오기 -->
+<aop:aspectj-autoproxy/>
+</beans>
